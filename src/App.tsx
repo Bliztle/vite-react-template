@@ -1,9 +1,12 @@
-import './App.css';
+import { QueryProvider } from './features/network/query';
+import RootRouter from './routes/RootRouter';
 
 function App() {
     return (
         <>
-            <div></div>
+            <QueryProvider>
+                <RootRouter />
+            </QueryProvider>
         </>
     );
 }
